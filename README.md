@@ -1,6 +1,6 @@
-# Goal
+# What is Ugly Wireframe Kit?
 
-Generate ideas and collaborate with your team quickly without being distracted and slowed down by finer details.
+Use it to generate ideas and collaborate with your team quickly without being distracted and slowed down by finer details.
 
 ------------------------------------------------------------
 

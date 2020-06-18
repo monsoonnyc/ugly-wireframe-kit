@@ -14,6 +14,8 @@ Add this sketch file to your library and insert components into your project fil
 Option 2:
 Just copy and paste components directly to your project files.
 
+Figma file: https://www.figma.com/file/lYzEYgOlZinLpR6vnsEy4i/Ugly-Wireframe-Kit?node-id=0%3A1
+
 ------------------------------------------------------------
 
 # Sketch
@@ -25,6 +27,8 @@ Add this sketch file to your library and insert components into your project fil
 
 Option 2:
 Just copy and paste components directly to your project files.
+
+Download Sketch file: https://github.com/monsoonnyc/ugly-wireframe-kit/raw/master/Ugly%20Wireframe%20Kit.sketch
 
 ------------------------------------------------------------
 

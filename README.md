@@ -1,10 +1,12 @@
-# Figma version of Ugly Wireframe Kit
+# Goal
 
 Generate ideas and collaborate with your team quickly without being distracted and slowed down by finer details.
 
 ------------------------------------------------------------
 
-There are 2 ways to use Ugly Wireframe Kit:
+# Figma
+
+How to use with Figma:
 
 Option 1:
 Add this sketch file to your library and insert components into your project files.
@@ -14,13 +16,9 @@ Just copy and paste components directly to your project files.
 
 ------------------------------------------------------------
 
-# Sketch version of Ugly Wireframe Kit
+# Sketch
 
-Generate ideas and collaborate with your team quickly without being distracted and slowed down by finer details.
-
-------------------------------------------------------------
-
-There are 2 ways to use Ugly Wireframe Kit:
+How to use with Sketch:
 
 Option 1:
 Add this sketch file to your library and insert components into your project files.

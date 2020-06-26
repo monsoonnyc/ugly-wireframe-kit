@@ -1,3 +1,5 @@
+<img src="https://github.com/monsoonnyc/ugly-wireframe-kit/blob/master/ugly-wireframe-kit.png" with="600px"/>
+
 # What is Ugly Wireframe Kit?
 
 Use it to generate ideas and collaborate with your team quickly without being distracted and slowed down by finer details.

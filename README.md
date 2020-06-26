@@ -18,7 +18,7 @@ Just copy and paste components directly to your project files.
 
 *Note: Copy-pasting components across multiple Figma files will detach all nested symbols. So working directly on this file is recommended. 
 
-Figma file: https://www.figma.com/file/lYzEYgOlZinLpR6vnsEy4i/Ugly-Wireframe-Kit?node-id=0%3A1
+Figma file: https://www.figma.com/file/zJaivZVarhgNQ26juY2ahO/Ugly-Wireframe-Kit
 
 ------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-<img src="https://github.com/monsoonnyc/ugly-wireframe-kit/blob/master/ugly-wireframe-kit.png" with="600px"/>
+<img src="https://github.com/monsoonnyc/ugly-wireframe-kit/blob/master/archive/ugly-wireframe-kit.png" with="600px"/>
 
 # Ugly Wireframe Kit
 
@@ -98,6 +98,8 @@ The kit is set in **Chalkboard**, an Apple system font. It is not web-embeddable
 Modern evergreen browsers. The hand-drawn effect relies on SVG `feTurbulence` / `feDisplacementMap`, supported in all current Chrome, Edge, Firefox, and Safari. In environments without SVG filter support the system degrades gracefully to clean straight-edged wireframes.
 
 ## Credits
+
+Created by Thomas Tran
 
 Derived from the original *Ugly Wireframe Kit* — a Sketch wireframe library first created in **2019**. The original `.sketch` file and its readme are preserved in [`/archive`](./archive). This is the **v2** rebuild (2026): a complete reimagining as a hand-drawn, framework-agnostic CSS system, with the line character and icons kept faithful to the source.
 

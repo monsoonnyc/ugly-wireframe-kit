@@ -1,0 +1,67 @@
+{
+  "$schema": "https://design-tokens.org/format",
+  "$name": "Ugly Wireframe Kit",
+  "$description": "Lo-fi, hand-drawn wireframe design tokens. Grayscale-driven, Chalkboard type, wobbly 1.5px strokes. Built for fast idea-exploration prototypes.",
+  "color": {
+    "ink":          { "value": "rgb(6, 22, 33)",        "type": "color", "comment": "Primary line + text. Near-black navy, never pure #000." },
+    "paper":        { "value": "#ffffff",               "type": "color", "comment": "Default surface." },
+    "muted":        { "value": "#777777",               "type": "color", "comment": "Secondary / disabled text." },
+    "line-muted":   { "value": "#979797",               "type": "color", "comment": "Faint strokes, dividers." },
+    "fill-soft":    { "value": "#eeeeee",               "type": "color", "comment": "Filled placeholder bars, hover rows, image boxes." },
+    "fill-softer":  { "value": "#f5f5f5",               "type": "color", "comment": "Subtle zebra / disabled fill." },
+    "danger":       { "value": "#e20000",               "type": "color", "comment": "Errors, warning banners, required." },
+    "danger-soft":  { "value": "rgba(226, 0, 0, 0.08)", "type": "color", "comment": "Warning banner background tint." },
+    "link":         { "value": "#004bff",               "type": "color", "comment": "Hyperlinks." },
+    "link-soft":    { "value": "#9dbaff",               "type": "color", "comment": "Visited / muted link." }
+  },
+  "font": {
+    "family": {
+      "value": "\"Chalkboard SE\", \"Chalkboard\", \"Comic Neue\", \"Comic Sans MS\", cursive",
+      "type": "fontFamily",
+      "comment": "Chalkboard is the real face (Apple-only); Comic Neue is the embedded web fallback."
+    },
+    "weight": { "regular": { "value": 400, "type": "fontWeight" }, "bold": { "value": 700, "type": "fontWeight" } }
+  },
+  "type": {
+    "h1":           { "value": { "size": "44px", "lineHeight": "52px", "weight": 700 }, "type": "typography" },
+    "h2":           { "value": { "size": "28px", "lineHeight": "36px", "weight": 700 }, "type": "typography" },
+    "h3":           { "value": { "size": "16px", "lineHeight": "24px", "weight": 700 }, "type": "typography" },
+    "body":         { "value": { "size": "16px", "lineHeight": "24px", "weight": 400 }, "type": "typography" },
+    "body-small":   { "value": { "size": "14px", "lineHeight": "20px", "weight": 400 }, "type": "typography" },
+    "label":        { "value": { "size": "16px", "lineHeight": "24px", "weight": 700 }, "type": "typography" },
+    "caption":      { "value": { "size": "14px", "lineHeight": "20px", "weight": 400 }, "type": "typography", "comment": "Secondary, in muted gray." }
+  },
+  "space": {
+    "0": { "value": "0px", "type": "dimension" },
+    "1": { "value": "4px",  "type": "dimension" },
+    "2": { "value": "8px",  "type": "dimension" },
+    "3": { "value": "12px", "type": "dimension" },
+    "4": { "value": "16px", "type": "dimension" },
+    "5": { "value": "24px", "type": "dimension" },
+    "6": { "value": "32px", "type": "dimension" },
+    "7": { "value": "48px", "type": "dimension" },
+    "8": { "value": "64px", "type": "dimension" }
+  },
+  "stroke": {
+    "width":      { "value": "1.5px", "type": "dimension", "comment": "The single line weight used everywhere." },
+    "width-bold": { "value": "2.5px", "type": "dimension", "comment": "Emphasis / active states." }
+  },
+  "radius": {
+    "none": { "value": "0px", "type": "dimension", "comment": "Default — sharp corners. The wobble supplies all the softness." },
+    "sm":   { "value": "2px", "type": "dimension" },
+    "pill": { "value": "999px", "type": "dimension", "comment": "Chips / pills." }
+  },
+  "shadow": {
+    "sketch": { "value": "3px 3px 0 0 rgba(6,22,33,0.10)", "type": "shadow", "comment": "Sketchy offset drop, drawn on the wobbly edge." },
+    "pop":    { "value": "4px 5px 0 0 rgba(6,22,33,0.14)", "type": "shadow", "comment": "Modals, popovers, tooltips." }
+  },
+  "motion": {
+    "duration": { "fast": { "value": "120ms", "type": "duration" }, "base": { "value": "180ms", "type": "duration" }, "slow": { "value": "300ms", "type": "duration" } },
+    "easing":   { "standard": { "value": "cubic-bezier(0.3, 0.7, 0.4, 1)", "type": "cubicBezier" } }
+  },
+  "breakpoint": {
+    "mobile":  { "value": "375px",  "type": "dimension" },
+    "tablet":  { "value": "768px",  "type": "dimension" },
+    "desktop": { "value": "1280px", "type": "dimension" }
+  }
+}

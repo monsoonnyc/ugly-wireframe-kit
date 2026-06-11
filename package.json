@@ -1,0 +1,35 @@
+{
+  "name": "ugly-wireframe-kit",
+  "version": "2.0.0",
+  "description": "A rigorous, intentionally lo-fi hand-drawn wireframe design system. Grayscale, Chalkboard type, wobbly strokes. Built for fast idea exploration.",
+  "keywords": [
+    "wireframe",
+    "design-system",
+    "lo-fi",
+    "hand-drawn",
+    "sketch",
+    "css",
+    "ui-kit",
+    "prototyping"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/monsoonnyc/ugly-wireframe-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monsoonnyc/ugly-wireframe-kit.git"
+  },
+  "main": "wireframe.css",
+  "style": "wireframe.css",
+  "files": [
+    "wireframe.css",
+    "wireframe-icons.js",
+    "wireframe-filters.svg",
+    "wireframe-tokens.json",
+    "index.html",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

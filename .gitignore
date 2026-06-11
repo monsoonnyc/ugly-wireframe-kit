@@ -1,2 +1,5 @@
 support.js
 *.dc.html
+
+# Cursor plan docs (local planning only)
+.cursor/plans/

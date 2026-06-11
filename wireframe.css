@@ -555,10 +555,10 @@
    ============================================================================ */
 .wf-tooltip__nub { position: absolute; width: 18px; height: 14px; color: var(--wf-ink); z-index: 2; }
 .wf-tooltip__nub svg { display: block; width: 100%; height: 100%; filter: url(#wf-rough-3); }
-.wf-tooltip--bottom .wf-tooltip__nub { left: 50%; bottom: -11px; transform: translateX(-50%); }
-.wf-tooltip--top .wf-tooltip__nub { left: 50%; top: -11px; transform: translateX(-50%) rotate(180deg); }
-.wf-tooltip--right .wf-tooltip__nub { top: 50%; right: -13px; transform: translateY(-50%) rotate(-90deg); }
-.wf-tooltip--left .wf-tooltip__nub { top: 50%; left: -13px; transform: translateY(-50%) rotate(90deg); }
+.wf-tooltip--bottom .wf-tooltip__nub { left: 50%; bottom: -10px; transform: translateX(-50%); }
+.wf-tooltip--top .wf-tooltip__nub { left: 50%; top: -10px; transform: translateX(-50%) rotate(180deg); }
+.wf-tooltip--right .wf-tooltip__nub { top: 50%; right: -12px; transform: translateY(-50%) rotate(-90deg); }
+.wf-tooltip--left .wf-tooltip__nub { top: 50%; left: -12px; transform: translateY(-50%) rotate(90deg); }
 .wf-tooltip--dark .wf-tooltip__nub { color: var(--wf-ink); }
 
 /* ============================================================================
@@ -585,3 +585,62 @@
 .wf-phone__screen::before { content: ""; position: absolute; inset: 0; border: var(--wf-stroke) solid var(--wf-line-muted); border-radius: 18px; pointer-events: none; z-index: 5; }
 .wf-phone__notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 96px; height: 16px; z-index: 6; }
 .wf-phone__notch::before { content: ""; position: absolute; inset: 0; background: var(--wf-ink); border-radius: var(--wf-radius-pill); filter: url(#wf-rough-3); }
+
+/* ============================================================================
+   STACKING SAFETY
+   Decorative surfaces sit behind host content so bare text nodes stay visible.
+   ============================================================================ */
+.wf-edge,
+.wf-btn,
+.wf-tag,
+.wf-control,
+.wf-box-control,
+.wf-toggle,
+.wf-toggle__knob,
+.wf-segmented,
+.wf-card,
+.wf-banner,
+.wf-list,
+.wf-list__item,
+.wf-tab,
+.wf-accordion__item,
+.wf-table-wrap,
+.wf-modal,
+.wf-tooltip,
+.wf-progress,
+.wf-step__dot,
+.wf-placeholder,
+.wf-toast,
+.wf-avatar,
+.wf-browser,
+.wf-phone {
+  isolation: isolate;
+}
+
+.wf-edge::before,
+.wf-btn::before,
+.wf-tag::before,
+.wf-control::before,
+.wf-box-control::before,
+.wf-toggle::before,
+.wf-toggle__knob::before,
+.wf-segmented::before,
+.wf-card::before,
+.wf-banner::before,
+.wf-list::before,
+.wf-list__item:hover::before,
+.wf-list__item--selected::before,
+.wf-accordion__item::before,
+.wf-table-wrap::before,
+.wf-modal::before,
+.wf-tooltip::before,
+.wf-progress::before,
+.wf-step__dot::before,
+.wf-placeholder::before,
+.wf-placeholder--image::after,
+.wf-toast::before,
+.wf-avatar::before,
+.wf-browser::before,
+.wf-phone::before {
+  z-index: -1;
+}

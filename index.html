@@ -285,7 +285,7 @@
       <p class="wf-caption" style="margin-bottom:18px;">Primary (filled ink), secondary (outline), ghost. Small + icon variants. <code>.wf-btn</code></p>
       <div class="frame"><div class="frame-demo wf-stack" style="gap:22px;">
         <div class="wf-row wf-row--wrap" style="gap:14px;">
-          <button class="wf-btn wf-btn--primary"><span>Primary</span></button>
+          <button class="wf-btn wf-btn--primary">Save</button>
           <button class="wf-btn wf-btn--secondary"><span>Secondary</span></button>
           <button class="wf-btn wf-btn--ghost"><span>Ghost</span></button>
           <button class="wf-btn wf-btn--primary"><i class="wf-icon wf-icon--sm" data-icon="plus"></i><span>With icon</span></button>
@@ -319,7 +319,7 @@
           <h2 id="tags" class="wf-h2 gx" style="margin-bottom:4px;">Tags &amp; chips</h2>
           <p class="wf-caption" style="margin-bottom:18px;"><code>.wf-tag</code> — outline, filled, muted, pill, removable.</p>
           <div class="frame"><div class="frame-demo wf-row wf-row--wrap" style="gap:10px;">
-            <span class="wf-tag"><span>Tag</span></span>
+            <span class="wf-tag">Launch</span>
             <span class="wf-tag wf-tag--fill"><span>Filled</span></span>
             <span class="wf-tag wf-tag--muted"><span>Muted</span></span>
             <span class="wf-tag wf-tag--pill"><span>Pill</span></span>
@@ -474,12 +474,12 @@
           <p class="wf-caption" style="margin-bottom:18px;">Live — click to switch. <code>.wf-tabs</code></p>
           <div class="frame"><div class="frame-demo">
             <div class="wf-tabs" id="demo-tabs">
-              <button class="wf-tab wf-tab--active" data-tab="0">Tab one</button>
+              <button class="wf-tab wf-tab--active" data-tab="0">All</button>
               <button class="wf-tab" data-tab="1">Tab two</button>
               <button class="wf-tab" data-tab="2">Tab three</button>
             </div>
             <div id="demo-tab-body" style="padding:18px 4px 2px;">
-              <p class="wf-body wf-muted" style="margin:0;">Panel content for <strong>tab one</strong>.</p>
+              <p class="wf-body wf-muted" style="margin:0;">Panel content for <strong>all</strong>.</p>
             </div>
           </div></div>
         </div>
@@ -1058,9 +1058,8 @@
         <div class="wf-card"><div class="wf-card__body">
           <div class="wf-h3">2 · Write semantic HTML</div>
           <pre style="margin:8px 0 0; padding:14px; background:var(--wf-fill-softer); font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.7; white-space:pre-wrap; overflow:auto;">&lt;div class="wf"&gt;
-  &lt;button class="wf-btn wf-btn--primary"&gt;
-    &lt;span&gt;Save&lt;/span&gt;
-  &lt;/button&gt;
+  &lt;button class="wf-btn wf-btn--primary"&gt;Save&lt;/button&gt;
+  &lt;span class="wf-tag"&gt;Launch&lt;/span&gt;
   &lt;i class="wf-icon" data-icon="check"&gt;&lt;/i&gt;
 &lt;/div&gt;</pre>
         </div></div>
@@ -1268,7 +1267,7 @@
       // ---------- tabs ----------
       var tabs = document.getElementById("demo-tabs");
       var tbody = document.getElementById("demo-tab-body");
-      var labels = ["one", "two", "three"];
+      var labels = ["all", "two", "three"];
       if (tabs && tbody) tabs.addEventListener("click", function (e) {
         var btn = e.target.closest("[data-tab]"); if (!btn) return;
         tabs.querySelectorAll(".wf-tab").forEach(function (t) { t.classList.remove("wf-tab--active"); });

@@ -14,6 +14,11 @@
     "link":         { "value": "#004bff",               "type": "color", "comment": "Hyperlinks." },
     "link-soft":    { "value": "#9dbaff",               "type": "color", "comment": "Visited / muted link." }
   },
+  "background": {
+    "backdrop":  { "value": "#fbfbfa",                "type": "color", "comment": "Warm off-white page background." },
+    "grid-line": { "value": "rgba(6, 22, 33, 0.035)", "type": "color", "comment": "Subtle graph-paper grid line." },
+    "grid-size": { "value": "32px",                   "type": "dimension", "comment": "Graph-paper cell size." }
+  },
   "font": {
     "family": {
       "value": "\"Chalkboard SE\", \"Chalkboard\", \"Comic Neue\", \"Comic Sans MS\", cursive",

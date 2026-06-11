@@ -12,7 +12,7 @@
 <script src="wireframe-icons.js?v=3"></script>
 <style>
   html, body { margin: 0; }
-  body { background: #e4e4e4; }
+  body { background: var(--wf-backdrop); }
   .gx { scroll-margin-top: 92px; }
   .side-rail { position: relative; }
   .side-rail::after { content: ""; position: absolute; top: 10px; bottom: 10px; right: 0; border-right: 1.5px solid var(--wf-ink); filter: url(#wf-rough-1); }
@@ -30,7 +30,7 @@
   .frame { position: relative; background: #fff; border: 1.5px solid var(--wf-ink); }
   .frame-demo { padding: 28px 30px; }
   ::-webkit-scrollbar { width: 12px; height: 12px; }
-  ::-webkit-scrollbar-thumb { background: #b9b9b9; border: 2px solid #e4e4e4; }
+  ::-webkit-scrollbar-thumb { background: #b9b9b9; border: 2px solid var(--wf-backdrop); }
 </style>
 </head>
 <body>
@@ -52,10 +52,10 @@
   </defs>
 </svg>
 
-<div class="wf" style="min-height:100vh; background:#e4e4e4;">
+<div class="wf wf-bg-grid" style="min-height:100vh;">
 
   <!-- ============ STICKY HEADER ============ -->
-  <header style="position:sticky; top:0; z-index:50; background:#e4e4e4; padding:14px 32px; display:flex; align-items:center; gap:20px; border-bottom:1.5px solid var(--wf-ink);">
+  <header class="wf-bg-grid" style="position:sticky; top:0; z-index:50; padding:14px 32px; display:flex; align-items:center; gap:20px; border-bottom:1.5px solid var(--wf-ink);">
     <div class="wf-edge wf-edge--fill" style="width:48px; height:48px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
       <span style="color:#fff; font-size:26px; font-weight:700; line-height:1;">U</span>
     </div>
@@ -71,6 +71,7 @@
         <a class="nav-sec" href="#foundations">Foundations</a>
         <div class="nav-sub">
           <a class="nav-link" data-sec="foundations" href="#color">Color</a>
+          <a class="nav-link" data-sec="foundations" href="#background">Background</a>
           <a class="nav-link" data-sec="foundations" href="#typography">Typography</a>
           <a class="nav-link" data-sec="foundations" href="#spacing">Spacing</a>
           <a class="nav-link" data-sec="foundations" href="#stroke">Stroke & shadow</a>
@@ -172,6 +173,24 @@
             <div>
               <div class="wf-edge" style="height:56px;"><div class="swatch" style="background:#f5f5f5;"></div></div>
               <div style="margin-top:8px;"><div style="font-weight:700; font-size:14px;">Fill softer</div><div class="wf-caption">--wf-fill-softer</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section style="margin-bottom:30px;">
+      <h2 id="background" class="wf-h2 gx" style="margin-bottom:4px;">Background</h2>
+      <p class="wf-caption" style="margin-bottom:18px;">Subtle graph paper for full-page wireframes. Use <code>.wf-bg-grid</code> on a page shell.</p>
+      <div class="frame">
+        <div class="frame-demo">
+          <div class="wf-edge wf-edge--nofill wf-bg-grid" style="height:180px; padding:24px; display:flex; align-items:flex-end;">
+            <div class="wf-card" style="width:260px;">
+              <div class="wf-card__body">
+                <div class="wf-h3">Graph paper backdrop</div>
+                <p class="wf-caption">--wf-backdrop · --wf-grid-line · --wf-grid-size</p>
+              </div>
             </div>
           </div>
         </div>

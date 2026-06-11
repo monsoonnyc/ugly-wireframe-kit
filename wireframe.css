@@ -28,6 +28,9 @@
   --wf-danger-soft: rgba(226, 0, 0, 0.08);
   --wf-link: #004bff;
   --wf-link-soft: #9dbaff;
+  --wf-backdrop: #fbfbfa;
+  --wf-grid-line: rgba(6, 22, 33, 0.035);
+  --wf-grid-size: 32px;
 
   /* ---- type ----------------------------------------------------------- */
   --wf-font: "Chalkboard SE", "Chalkboard", "Comic Neue", "Comic Sans MS", cursive;
@@ -400,7 +403,8 @@
 .wf-multiselect__placeholder { color: var(--wf-muted); padding: 2px 4px; pointer-events: none; }
 .wf-multiselect__menu { position: absolute; left: 0; right: 0; top: calc(100% + 5px); z-index: var(--wf-z-sticky); background: var(--wf-paper); max-height: 240px; overflow: auto; }
 .wf-multiselect--open .wf-select__chev { transform: rotate(180deg); }
-.wf-ms-chip { cursor: default; }
+.wf-ms-chip { cursor: default;}
+.wf-ms-chip::before { border-radius: var(--wf-radius-pill);}
 
 /* ============================================================================
    TABLE
@@ -443,8 +447,8 @@
 /* ============================================================================
    PROGRESS
    ============================================================================ */
-.wf-progress { position: relative; height: 16px; background: transparent; }
-.wf-progress::before { content: ""; position: absolute; inset: 0; border: var(--wf-stroke) solid var(--wf-ink); background: var(--wf-paper); filter: url(#wf-rough-1); pointer-events: none; }
+.wf-progress { position: relative; height: 10px; background: transparent; }
+.wf-progress::before { content: ""; position: absolute; inset: 0; border: var(--wf-stroke) solid var(--wf-ink); border-radius: var(--wf-radius-pill); background: var(--wf-paper); filter: url(#wf-rough-1); pointer-events: none; }
 .wf-progress__bar { position: absolute; left: 2px; top: 2px; bottom: 2px; z-index: 1; }
 .wf-progress__bar::before { content: ""; position: absolute; inset: 0; background: var(--wf-ink); filter: url(#wf-rough-3); }
 /* indeterminate: a bar that sweeps continuously left → right and loops */
@@ -518,6 +522,13 @@
 .wf-row--wrap { flex-wrap: wrap; }
 .wf-grow { flex: 1; min-width: 0; }
 .wf-center { display: flex; align-items: center; justify-content: center; }
+.wf-bg-grid {
+  background:
+    linear-gradient(90deg, var(--wf-grid-line) 1px, transparent 1px),
+    linear-gradient(var(--wf-grid-line) 1px, transparent 1px),
+    var(--wf-backdrop);
+  background-size: var(--wf-grid-size) var(--wf-grid-size);
+}
 
 /* ============================================================================
    TOAST

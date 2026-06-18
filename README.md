@@ -43,7 +43,7 @@ That's it. The fourth file, `wireframe-tokens.json`, is the machine-readable tok
 | File | Purpose |
 | --- | --- |
 | `wireframe.css` | All design tokens (CSS variables) + every component class + the hand-drawn engine |
-| `wireframe-icons.js` | 25 authentic hand-drawn icons; hydrates `<i class="wf-icon" data-icon="…">` |
+| `wireframe-icons.js` | 29 authentic hand-drawn icons; hydrates `<i class="wf-icon" data-icon="…">` |
 | `wireframe-filters.svg` | The SVG displacement filters that make edges wobble (paste once per page) |
 | `wireframe-tokens.json` | Full token set as JSON for design tooling / pipelines |
 | `index.html` | The standalone storybook — every token, component, and pattern |
@@ -85,7 +85,7 @@ Desktop app screen · mobile screen · empty state · onboarding popover · sett
 
 `<i class="wf-icon" data-icon="NAME"></i>` — paints with `currentColor`, sizes with `font-size`.
 
-`placeholder` `avatar` `plus` `x` `close` `ellipses` `warning` `info` `check` `square` `trash` `search` `reload` `menu` `caret-left` `caret-right` `caret-up` `caret-down` `arrow-left` `arrow-right` `star` `star-filled` `steps` `steps-filled` `spinner`
+`placeholder` `avatar` `plus` `x` `close` `ellipses` `warning` `info` `check` `square` `trash` `search` `reload` `menu` `chevron-left` `chevron-right` `chevron-up` `chevron-down` `caret-left` `caret-right` `caret-up` `caret-down` `arrow-left` `arrow-right` `star` `star-filled` `steps` `steps-filled` `spinner`
 
 ---
 

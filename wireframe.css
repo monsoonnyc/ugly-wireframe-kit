@@ -232,6 +232,7 @@
   background: transparent; border: 0; padding: 7px 12px; min-height: 40px;
 }
 .wf-input::placeholder { color: var(--wf-muted); }
+.wf-input:disabled { color: var(--wf-muted); cursor: not-allowed; opacity: 1; -webkit-text-fill-color: var(--wf-muted); }
 /* wrapper that draws the wobbly box around an input/select/search */
 .wf-control { position: relative; display: flex; align-items: center; }
 .wf-control > .wf-input, .wf-control > * { position: relative; z-index: 1; }
@@ -243,6 +244,7 @@
 .wf-control--error::before { border-color: var(--wf-danger); }
 .wf-control--filled::before { background: var(--wf-paper); }
 .wf-control--disabled::before { border-color: var(--wf-line-muted); background: var(--wf-fill-softer); }
+.wf-control--disabled, .wf-control--disabled .wf-input, .wf-control--disabled .wf-control__icon { color: var(--wf-muted); cursor: not-allowed; }
 .wf-control__icon { display: inline-flex; align-items: center; color: var(--wf-ink); padding-left: 12px; }
 .wf-control__icon--trail { padding-left: 0; padding-right: 12px; margin-left: auto; }
 .wf-field__hint { display: flex; align-items: center; gap: 6px; font-size: var(--wf-small); line-height: 20px; margin-top: 6px; color: var(--wf-muted); }
@@ -290,6 +292,14 @@
 .wf-toggle--on::before { background: var(--wf-ink); }
 .wf-toggle--on .wf-toggle__knob { left: 23px; }
 .wf-toggle--on .wf-toggle__knob::before { background: var(--wf-paper); border-color: var(--wf-paper); }
+.wf-choice--disabled .wf-box-control::before,
+.wf-choice--disabled .wf-toggle::before,
+.wf-choice--disabled .wf-toggle__knob::before { border-color: var(--wf-line-muted); background: var(--wf-fill-softer); }
+.wf-choice--disabled.wf-checkbox--checked .wf-box-control::before,
+.wf-choice--disabled.wf-radio--checked .wf-box-control::before,
+.wf-choice--disabled .wf-toggle--on::before { border-color: var(--wf-line-muted); background: var(--wf-line-muted); }
+.wf-choice--disabled .wf-toggle,
+.wf-choice--disabled .wf-box-control { cursor: not-allowed; }
 
 /* slider */
 .wf-slider { position: relative; height: 24px; display: flex; align-items: center; width: 100%; cursor: pointer; touch-action: none; }
@@ -357,6 +367,7 @@
 .wf-list__title { font-size: var(--wf-body); line-height: 22px; }
 .wf-list__desc { font-size: var(--wf-small); line-height: 18px; color: var(--wf-muted); }
 .wf-list__trail { display: inline-flex; align-items: center; gap: var(--wf-space-2); color: var(--wf-ink); }
+.wf-list__item--disabled .wf-list__trail { color: var(--wf-muted); }
 
 /* ============================================================================
    TABS

@@ -27,7 +27,7 @@
   @media (max-width: 880px) { #side-nav-wrap { display: none; } }
   .swatch { width: 100%; height: 56px; }
   /* gallery-local frame chrome */
-  .frame { position: relative; background: #fff; border: 1.5px solid var(--wf-ink); }
+  .frame { position: relative; background: #fff; border: 1.5px solid var(--wf-line-muted); }
   .frame-demo { padding: 28px 30px; }
   ::-webkit-scrollbar { width: 12px; height: 12px; }
   ::-webkit-scrollbar-thumb { background: #b9b9b9; border: 2px solid var(--wf-backdrop); }
@@ -286,7 +286,7 @@
     <!-- ICONS -->
     <section style="margin-bottom:30px;">
       <h2 id="icons" class="wf-h2 gx" style="margin-bottom:4px;">Icons</h2>
-      <p class="wf-caption" style="margin-bottom:18px;">25 authentic hand-drawn glyphs. <code>&lt;i class="wf-icon" data-icon="check"&gt;&lt;/i&gt;</code> — paints with currentColor, sizes with font-size.</p>
+      <p class="wf-caption" style="margin-bottom:18px;">29 authentic hand-drawn glyphs. <code>&lt;i class="wf-icon" data-icon="check"&gt;&lt;/i&gt;</code> — paints with currentColor, sizes with font-size.</p>
       <div class="frame"><div class="frame-demo">
         <div id="icon-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(96px,1fr)); gap:14px;"></div>
       </div></div>
@@ -330,7 +330,7 @@
           <p class="wf-caption" style="margin-bottom:18px;"><code>.wf-link</code> — blue, the only place blue appears.</p>
           <div class="frame"><div class="frame-demo wf-row wf-row--wrap" style="gap:22px;">
             <a class="wf-link">Text link</a>
-            <a class="wf-link wf-link--inline">Show more <i class="wf-icon wf-icon--sm" data-icon="caret-down"></i></a>
+            <a class="wf-link wf-link--inline">Show more <i class="wf-icon wf-icon--sm" data-icon="chevron-down"></i></a>
             <a class="wf-link wf-link--inline"><i class="wf-icon wf-icon--sm" data-icon="plus"></i> Add new</a>
           </div></div>
         </div>
@@ -391,18 +391,21 @@
             <label class="wf-choice wf-checkbox"><span class="wf-box-control"></span><span>Unchecked</span></label>
             <label class="wf-choice wf-checkbox wf-checkbox--checked"><span class="wf-box-control"><i class="wf-icon wf-icon--sm" data-icon="check"></i></span><span>Checked</span></label>
             <label class="wf-choice wf-checkbox wf-choice--disabled"><span class="wf-box-control"></span><span>Disabled</span></label>
+            <label class="wf-choice wf-checkbox wf-checkbox--checked wf-choice--disabled"><span class="wf-box-control"><i class="wf-icon wf-icon--sm" data-icon="check"></i></span><span>Checked · disabled</span></label>
           </div>
           <div class="wf-stack" style="gap:14px;">
             <span class="wf-eyebrow">Radio</span>
             <label class="wf-choice wf-radio"><span class="wf-box-control"></span><span>Option one</span></label>
             <label class="wf-choice wf-radio wf-radio--checked"><span class="wf-box-control"></span><span>Option two</span></label>
             <label class="wf-choice wf-radio wf-choice--disabled"><span class="wf-box-control"></span><span>Disabled</span></label>
+            <label class="wf-choice wf-radio wf-radio--checked wf-choice--disabled"><span class="wf-box-control"></span><span>Selected · disabled</span></label>
           </div>
           <div class="wf-stack" style="gap:14px;">
             <span class="wf-eyebrow">Toggle</span>
             <label class="wf-choice"><span class="wf-toggle" id="demo-toggle" data-on="false"><span class="wf-toggle__knob"></span></span><span>Tap to toggle</span></label>
             <label class="wf-choice"><span class="wf-toggle wf-toggle--on"><span class="wf-toggle__knob"></span></span><span>On</span></label>
             <label class="wf-choice wf-choice--disabled"><span class="wf-toggle"><span class="wf-toggle__knob"></span></span><span>Off · disabled</span></label>
+            <label class="wf-choice wf-choice--disabled"><span class="wf-toggle wf-toggle--on"><span class="wf-toggle__knob"></span></span><span>On · disabled</span></label>
           </div>
           <div class="wf-stack" style="gap:14px; grid-column:1 / 2;">
             <span class="wf-eyebrow">Segmented / filters</span>
@@ -508,15 +511,15 @@
           <div class="frame"><div class="frame-demo">
             <div class="wf-accordion" id="demo-accordion">
               <div class="wf-accordion__item wf-accordion__item--open" data-acc="0">
-                <div class="wf-accordion__head"><span class="wf-accordion__title">Item one</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="caret-down"></i></div>
+                <div class="wf-accordion__head"><span class="wf-accordion__title">Item one</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="chevron-down"></i></div>
                 <div class="wf-accordion__body wf-muted">Quisque cursus, metus vitae pharetra auctor — the expanded body copy lives here.</div>
               </div>
               <div class="wf-accordion__item" data-acc="1">
-                <div class="wf-accordion__head"><span class="wf-accordion__title">Item two</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="caret-down"></i></div>
+                <div class="wf-accordion__head"><span class="wf-accordion__title">Item two</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="chevron-down"></i></div>
                 <div class="wf-accordion__body wf-muted" style="display:none;">Hidden until opened.</div>
               </div>
               <div class="wf-accordion__item" data-acc="2">
-                <div class="wf-accordion__head"><span class="wf-accordion__title">Item three</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="caret-down"></i></div>
+                <div class="wf-accordion__head"><span class="wf-accordion__title">Item three</span><i class="wf-icon wf-icon--sm wf-accordion__chev" data-icon="chevron-down"></i></div>
                 <div class="wf-accordion__body wf-muted" style="display:none;">Hidden until opened.</div>
               </div>
             </div>
@@ -1120,7 +1123,7 @@
   // ---- icon gallery + demo interactions (vanilla, no framework) ----
   (function () {
     function buildIcons() {
-      var names = ["placeholder","avatar","plus","x","close","ellipses","warning","info","check","square","trash","search","reload","menu","caret-left","caret-right","caret-up","caret-down","arrow-left","arrow-right","star","star-filled","steps","steps-filled","spinner"];
+      var names = ["placeholder","avatar","plus","x","close","ellipses","warning","info","check","square","trash","search","reload","menu","chevron-left","chevron-right","chevron-up","chevron-down","caret-left","caret-right","caret-up","caret-down","arrow-left","arrow-right","star","star-filled","steps","steps-filled","spinner"];
       var grid = document.getElementById("icon-grid");
       if (!grid || !window.wfIcon) { return setTimeout(buildIcons, 60); }
       grid.innerHTML = names.map(function (n) {

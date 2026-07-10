@@ -209,9 +209,9 @@
 .wf-tag > * { position: relative; z-index: 1; }
 .wf-tag::before {
   content: ""; position: absolute; inset: 0; border: var(--wf-stroke) solid var(--wf-ink);
-  border-radius: var(--wf-radius); background: var(--wf-paper); filter: url(#wf-rough-3); pointer-events: none; z-index: 0;
+  border-radius: var(--wf-radius-pill); background: var(--wf-fill-soft); filter: url(#wf-rough-3); pointer-events: none; z-index: 0;
 }
-.wf-tag--pill::before { border-radius: var(--wf-radius-pill); }
+.wf-tag--pill::before { border-radius: var(--wf-radius-pill); background: var(--wf-paper); }
 .wf-tag--fill { color: var(--wf-paper); }
 .wf-tag--fill::before { background: var(--wf-ink); }
 .wf-tag--muted { color: var(--wf-muted); }

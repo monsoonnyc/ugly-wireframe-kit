@@ -101,7 +101,7 @@ Modern evergreen browsers. The hand-drawn effect relies on SVG `feTurbulence` / 
 
 Created by Thomas Tran
 
-Derived from the original *Ugly Wireframe Kit* — a Sketch wireframe library first created in **2019**. The original `.sketch` file and its readme are preserved in [`/archive`](./archive). This is the **v2** rebuild (2026): a complete reimagining as a hand-drawn, framework-agnostic CSS system, with the line character and icons kept faithful to the source.
+Derived from the original *Ugly Wireframe Kit* — a Sketch & Figma wireframe library first created in **2019**. The original `.sketch` & Figma file and its readme are preserved in [`/archive`](./archive). This is the **v2** rebuild (2026): a complete reimagining as a hand-drawn, framework-agnostic CSS system, with the line character and icons kept faithful to the source.
 
 ## License
 

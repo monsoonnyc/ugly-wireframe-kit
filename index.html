@@ -14,9 +14,8 @@
   html, body { margin: 0; }
   body { background: var(--wf-backdrop); }
   .gx { scroll-margin-top: 92px; }
-  .side-rail { position: relative; }
-  .side-rail::after { content: ""; position: absolute; top: 10px; bottom: 10px; right: 0; border-right: 1.5px solid var(--wf-ink); filter: url(#wf-rough-1); }
-  #side-nav { display: flex; flex-direction: column; }
+  #side-nav { position: relative; display: flex; flex-direction: column; padding: 30px 10px 48px 24px;}
+  #side-nav::after { content: ""; position: absolute; top: 0; bottom: 0; right: 0; border-right: 1.5px solid var(--wf-ink); filter: url(#wf-rough-1); pointer-events: none; }
   .nav-sec { display: block; font-weight: 700; font-size: 15px; padding: 10px 10px 5px; color: var(--wf-ink); text-decoration: none; }
   .nav-sec:hover { text-decoration: underline; text-underline-offset: 3px; }
   .nav-sec--active { color: var(--wf-ink); }
@@ -66,7 +65,7 @@
   </header>
 
   <div style="display:flex; align-items:flex-start; max-width:1340px; margin:0 auto;">
-    <aside id="side-nav-wrap" class="side-rail" style="position:sticky; top:79px; align-self:flex-start; flex:0 0 236px; width:236px; max-height:calc(100vh - 79px); overflow-y:auto; padding:30px 10px 48px 24px;">
+    <aside id="side-nav-wrap" style="position:sticky; top:79px; align-self:flex-start; flex:0 0 236px; width:236px; max-height:calc(100vh - 79px); overflow-y:auto;">
       <nav id="side-nav">
         <a class="nav-sec" href="#foundations">Foundations</a>
         <div class="nav-sub">

@@ -35,5 +35,3 @@ Just copy and paste components directly to your project files.
 Download Sketch file: https://github.com/monsoonnyc/ugly-wireframe-kit/raw/master/Ugly%20Wireframe%20Kit.sketch
 
 ------------------------------------------------------------
-
-Any questions or feedback, reach out to thomas.tran@mongodb.com

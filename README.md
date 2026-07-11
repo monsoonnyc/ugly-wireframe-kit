@@ -1,4 +1,4 @@
-
+<img src="https://github.com/monsoonnyc/ugly-wireframe-kit/blob/master/archive/ugly-wireframe-kit.png" with="600px"/>
 
 # Ugly Wireframe Kit
 
@@ -6,11 +6,9 @@ A rigorous, intentionally **lo-fi** hand-drawn wireframe design system. Grayscal
 
 Built so a coding agent (or a human) can drop in a few files, write semantic HTML, and get a believable wireframe in seconds.
 
-👉 **[Open the storybook](https://monsoonnyc.github.io/ugly-wireframe-kit/)**  ·  or open `index.html` locally.
+👉 **[Open the storybook](https://monsoonnyc.github.io/ugly-wireframe-kit/)** &nbsp;·&nbsp; or open `index.html` locally.
 
 ---
-
-
 
 ## Quick start
 
@@ -40,23 +38,17 @@ That's it. The fourth file, `wireframe-tokens.json`, is the machine-readable tok
 
 ---
 
-
-
 ## What's in the box
 
-
-| File                    | Purpose                                                                           |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| `wireframe.css`         | All design tokens (CSS variables) + every component class + the hand-drawn engine |
-| `wireframe-icons.js`    | 29 authentic hand-drawn icons; hydrates `<i class="wf-icon" data-icon="…">`       |
-| `wireframe-filters.svg` | The SVG displacement filters that make edges wobble (paste once per page)         |
-| `wireframe-tokens.json` | Full token set as JSON for design tooling / pipelines                             |
-| `index.html`            | The standalone storybook — every token, component, and pattern                    |
-
+| File | Purpose |
+| --- | --- |
+| `wireframe.css` | All design tokens (CSS variables) + every component class + the hand-drawn engine |
+| `wireframe-icons.js` | 29 authentic hand-drawn icons; hydrates `<i class="wf-icon" data-icon="…">` |
+| `wireframe-filters.svg` | The SVG displacement filters that make edges wobble (paste once per page) |
+| `wireframe-tokens.json` | Full token set as JSON for design tooling / pipelines |
+| `index.html` | The standalone storybook — every token, component, and pattern |
 
 ---
-
-
 
 ## How the hand-drawn look works
 
@@ -67,8 +59,6 @@ Every "drawn" surface keeps its **text crisp** and wobbles only its **edges**. E
 - The filters are intentionally cheap (single-octave noise); avoid applying them to very large elements.
 
 ---
-
-
 
 ## Tokens
 
@@ -82,8 +72,6 @@ All tokens are CSS custom properties — override them to re-skin the whole syst
 - **Motion** — `--wf-dur-fast/base/slow`, `--wf-ease`
 - **Z-index** — predictable layering scale (`--wf-z-overlay/modal/toast/tooltip`)
 - **Breakpoints** — mobile 375 · tablet 768 · desktop 1280
-
-
 
 ## Components
 
@@ -101,8 +89,6 @@ Desktop app screen · mobile screen · empty state · onboarding popover · sett
 
 ---
 
-
-
 ## Typography
 
 The kit is set in **Chalkboard**, an Apple system font. It is not web-embeddable, so the font stack falls back to **[Comic Neue](https://fonts.google.com/specimen/Comic+Neue)** (a free, near-identical rounded hand face) everywhere else. Both are intentionally informal to reinforce the "this is a wireframe, not a finished design" message.
@@ -115,7 +101,7 @@ Modern evergreen browsers. The hand-drawn effect relies on SVG `feTurbulence` / 
 
 Created by Thomas Tran
 
-Derived from the original *Ugly Wireframe Kit* — a Sketch & Figma wireframe library first created in **2019**. The original `.sketch` & Figma files and its readme are preserved in `[/archive](./archive)`. This is the **v2** rebuild (2026): a complete reimagining as a hand-drawn, framework-agnostic CSS system, with the line character and icons kept faithful to the source.
+Derived from the original *Ugly Wireframe Kit* — a Sketch wireframe library first created in **2019**. The original `.sketch` file and its readme are preserved in [`/archive`](./archive). This is the **v2** rebuild (2026): a complete reimagining as a hand-drawn, framework-agnostic CSS system, with the line character and icons kept faithful to the source.
 
 ## License
 

@@ -12,6 +12,10 @@ Built so a coding agent (or a human) can drop in a few files, write semantic HTM
 
 ## Quick start
 
+> **Prompting an agent?** Paste this: "Build this as a wireframe using the Ugly Wireframe Kit (https://github.com/monsoonnyc/ugly-wireframe-kit). Read the repo's README first, then use its exact components, classes, and tokens — don't invent your own styling."
+
+
+
 Copy four files into your project, then load them:
 
 ```html
